@@ -24,7 +24,7 @@ hi CursorLine guibg=black ctermbg=black
 
 
 " Default Colors
-hi Normal   ctermfg=252 ctermbg=240 guifg=#f0f0f0 guibg=#1e2426
+hi Normal   ctermfg=252 ctermbg=0   guifg=#f0f0f0 guibg=#1e2426
 hi NonText  ctermfg=241 ctermbg=241 guifg=#2c3032 guibg=#2c3032 gui=none
 hi Cursor   ctermfg=11  ctermbg=11  guibg=#babdb6
 hi ICursor  ctermfg=247 ctermbg=247 guibg=#babdb6
