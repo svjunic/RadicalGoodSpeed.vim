@@ -80,7 +80,7 @@ hi SignColumn                   ctermbg=0   guibg=#000000
 
 " Pmenu
 hi Pmenu            ctermfg=254 ctermbg=246 guibg=#666666 guifg=#eeeeec
-hi PmenuSel         ctermfg=129 ctermbg=116 guibg=#8cd0d3 guifg=#b30487
+hi PmenuSel         ctermfg=0   ctermbg=214 guibg=#fcaf3e guifg=#000000
 hi PmenuSbar                    ctermbg=240 guibg=#333333 
 hi PmenuThumb       ctermfg=255 ctermbg=255               guifg=#ffffff
 
