@@ -189,13 +189,3 @@ hi link cssBoxAttr Constant
 hi link cssTextAttr Constant
 hi link cssColorAttr Constant
 hi link cssFontAttr Constant
-
-
-"" gui
-if has('win32')
-	set transparency=240
-elseif has('mac')
-	set transparency=14
-elseif has('xfontset')
-	"set transparency=7
-endif
