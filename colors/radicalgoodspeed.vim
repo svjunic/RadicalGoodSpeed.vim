@@ -6,6 +6,38 @@
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
 "            0.3 - add setting for cterm
+" Colors: 
+"            cterm   gui
+"            0       #000000
+"            17      #003C70
+"            45      #00ccff
+"            16      #0a1012
+"            233     #0e1416
+"            234     #111111
+"            236     #1e2426
+"            238     #1f2b2d
+"            18      #204a87
+"            238     #2c3032
+"            239     #2e3436
+"            240     #333333
+"            244     #555753
+"            246     #666666
+"            75      #729fcf
+"            249     #888a85
+"            154     #8ae234
+"            116     #8cd0d3
+"            129     #9529F4
+"            140     #ad7fa8
+"            164     #b30487
+"            251     #babdb6
+"            252     #d3d7cf
+"            253     #e3e7df
+"            254     #eeeeec
+"            197     #ef2929
+"            214     #fcaf3e
+"            213     #ff88ee
+"            221     #ffd700
+"            255     #ffffff
 
 set background=dark
 
@@ -21,37 +53,6 @@ let colors_name = "radicalgoodspeed"
 set cursorline
 hi clear CursorLine
 hi CursorLine guibg=black ctermbg=black
-
-"" 0    #000000
-"" 17   #003C70
-"" 45   #00ccff
-"" 16   #0a1012
-"" 233  #0e1416
-"" 234  #111111
-"" 236  #1e2426
-"" 238  #1f2b2d
-"" 18   #204a87
-"" 238  #2c3032
-"" 239  #2e3436
-"" 240  #333333
-"" 244  #555753
-"" 246  #666666
-"" 75   #729fcf
-"" 249  #888a85
-"" 154  #8ae234
-"" 116  #8cd0d3
-"" 129  #9529F4
-"" 140  #ad7fa8
-"" 164  #b30487
-"" 251  #babdb6
-"" 252  #d3d7cf
-"" 253  #e3e7df
-"" 254  #eeeeec
-"" 197  #ef2929
-"" 214  #fcaf3e
-"" 213  #ff88ee
-"" 221  #ffd700
-"" 255  #ffffff
 
 
 " Default Colors
