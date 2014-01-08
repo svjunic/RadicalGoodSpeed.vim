@@ -1,7 +1,7 @@
 " Vim color file
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
-" Last Change: 2013 Aug 8
+" Last Change: 08-Jan-2014.
 " Version: 1.0
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
