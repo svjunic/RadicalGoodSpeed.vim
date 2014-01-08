@@ -2,12 +2,13 @@
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
 " Last Change: 2013 Aug 8
-" Version: 0.3
+" Version: 1.0
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
 "            0.3 - add setting for cterm
+"            1.0 - upload on www.vim.org
 " Colors: 
-"  	type   cterm   gui
+"   type   cterm   gui
 "   1      0       #000000
 "   2      17      #003C70
 "   3      45      #00ccff
