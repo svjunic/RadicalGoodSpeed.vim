@@ -1,4 +1,4 @@
-RadicalGoodSpeed
+RadicalGoodSpeed.vim
 ================
 
 my colorsheme.
