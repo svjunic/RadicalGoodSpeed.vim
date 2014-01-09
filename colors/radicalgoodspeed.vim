@@ -1,12 +1,13 @@
 " Vim color file
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
-" Last Change: 08-Jan-2014.
-" Version: 1.0
+" Last Change: 09-Jan-2014.
+" Version: 1.1
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
 "            0.3 - add setting for cterm
 "            1.0 - upload on www.vim.org
+"            1.1 - update TabLine settings
 " Colors: 
 "   type   cterm   gui
 "   1      0       #000000
@@ -39,6 +40,8 @@
 "   28     213     #ff88ee
 "   29     221     #ffd700
 "   30     255     #ffffff
+"   31     59      #626262
+"   32     237     #696969
 
 set background=dark
 
@@ -58,7 +61,7 @@ hi CursorLine guibg=black ctermbg=black
 
 " Default Colors
 hi Normal           ctermfg=251 ctermbg=234 guibg=#111111 guifg=#f0f0f0
-hi NonText          ctermfg=238 ctermbg=238 guibg=#2c3032 guifg=#2c3032 gui=none
+hi NonText          ctermfg=238 ctermbg=238 guibg=#2c3032 guifg=#2c3032 gui=none cterm=none
 hi Cursor           ctermfg=11  ctermbg=251 guibg=#babdb6
 hi ICursor          ctermfg=247 ctermbg=251 guibg=#babdb6
 
@@ -67,12 +70,12 @@ hi Search           ctermfg=239 ctermbg=214 guibg=#fcaf3e guifg=#2e3436
 hi IncSearch        ctermfg=214 ctermbg=239 guibg=#2e3436 guifg=#fcaf3e
 
 " Window Elements
-hi StatusLine       ctermfg=239 ctermbg=251 guibg=#babdb6 guifg=#2e3436 gui=none
-hi StatusLineNC     ctermfg=239 ctermbg=249 guibg=#888a85 guifg=#2e3436 gui=none
-hi VertSplit        ctermfg=244 ctermbg=249 guibg=#888a85 guifg=#555753 gui=none
+hi StatusLine       ctermfg=239 ctermbg=251 guibg=#babdb6 guifg=#2e3436 gui=none cterm=none
+hi StatusLineNC     ctermfg=239 ctermbg=249 guibg=#888a85 guifg=#2e3436 gui=none cterm=none
+hi VertSplit        ctermfg=244 ctermbg=249 guibg=#888a85 guifg=#555753 gui=none cterm=none
 hi Visual                       ctermbg=129 guibg=#9529F4
 hi MoreMsg          ctermfg=75                            guifg=#729fcf
-hi Question         ctermfg=154                           guifg=#8ae234 gui=none
+hi Question         ctermfg=154                           guifg=#8ae234 gui=none cterm=none
 hi WildMenu         ctermfg=254 ctermbg=233 guibg=#0e1416 guifg=#eeeeec
 hi LineNr           ctermfg=239 ctermbg=0   guibg=#000000 guifg=#3f4b4d
 
@@ -89,7 +92,7 @@ hi PmenuThumb       ctermfg=255 ctermbg=255               guifg=#ffffff
 hi DiffDelete       ctermfg=125 ctermbg=233 guibg=#0e1416 guifg=#4D3800
 hi DiffAdd          ctermfg=255 ctermbg=238 guibg=#1f2b2d
 hi DiffChange       ctermfg=255 ctermbg=17  guibg=#003C70
-hi DiffText         ctermfg=255 ctermbg=164 guibg=#b30487               gui=none
+hi DiffText         ctermfg=255 ctermbg=164 guibg=#b30487               gui=none cterm=none
 
 " ** todo ** 
 " Folds
@@ -99,12 +102,12 @@ hi FoldColumn                   ctermbg=0   guibg=#000000 guifg=#3465a4
 " Specials
 hi Title            ctermfg=214                           guifg=#fcaf3e
 hi Todo             ctermfg=214                           guifg=#fcaf3e
-hi SpecialKey       ctermfg=197                           guifg=#ef2929 gui=underline
+hi SpecialKey       ctermfg=197                           guifg=#ef2929 gui=underline cterm=underline
 
 " Tabs
-hi TabLine          ctermfg=249 ctermbg=16  guibg=#0a1012 guifg=#888a85
-hi TabLineFill      ctermfg=16                            guifg=#0a1012
-hi TabLineSel       ctermfg=254             guibg=#555753 guifg=#eeeeec gui=none
+hi TabLine          ctermfg=251 ctermbg=59  guibg=#626262 guifg=#babdb6 gui=none cterm=none
+hi TabLineFill      ctermfg=59  ctermbg=237 guibg=#696969 guifg=#626262 gui=underline cterm=underline
+hi TabLineSel       ctermfg=255 ctermbg=164 guibg=#b30487 guifg=#ffffff gui=bold cterm=bold
 
 " Matches
 hi MatchParen       ctermfg=239 ctermbg=214 guibg=#fcaf3e guifg=#2e3436
@@ -116,11 +119,11 @@ hi Directory        ctermfg=255             guifg=#ffffff
 hi Comment          ctermfg=45              guifg=#00ccff
 hi Constant         ctermfg=154             guifg=#8ae234
 hi Number           ctermfg=154             guifg=#8ae234
-hi Statement        ctermfg=213             guifg=#ff88ee gui=none
+hi Statement        ctermfg=213             guifg=#ff88ee gui=none cterm=none
 hi Identifier       ctermfg=221             guifg=#ffd700
 hi PreProc          ctermfg=214             guifg=#fcaf3e
 hi Function         ctermfg=214             guifg=#fcaf3e
-hi Type             ctermfg=253             guifg=#e3e7df gui=none
+hi Type             ctermfg=253             guifg=#e3e7df gui=none cterm=none
 hi Keyword          ctermfg=254             guifg=#eeeeec
 hi Special          ctermfg=249             guifg=#888a85
 hi Error            ctermfg=244             guifg=#eeeeec guibg=#cc0000
@@ -136,7 +139,7 @@ hi phpRelation                    ctermfg=249             guifg=#888a85
 hi phpMemberSelector              ctermfg=249             guifg=#888a85
 hi phpUnknownSelector             ctermfg=249             guifg=#888a85
 hi phpVarSelector                 ctermfg=251             guifg=#babdb6
-hi phpSemicolon                   ctermfg=249             guifg=#888a85 gui=none
+hi phpSemicolon                   ctermfg=249             guifg=#888a85 gui=none cterm=none
 hi phpFunctions                   ctermfg=252             guifg=#d3d7cf
 hi phpParent                      ctermfg=249             guifg=#888a85
 
@@ -150,7 +153,7 @@ hi htmlEndTag                     ctermfg=249             guifg=#888a85
 hi htmlTagName                    ctermfg=255             guifg=#ffffff
 hi htmlSpecialTagName             ctermfg=251             guifg=#babdb6
 hi htmlArg                        ctermfg=252             guifg=#d3d7cf
-hi htmlTitle                      ctermfg=154             guifg=#8ae234 gui=none
+hi htmlTitle                      ctermfg=154             guifg=#8ae234 gui=none cterm=none
 hi link htmlH1 htmlTitle
 hi link htmlH2 htmlH1
 hi link htmlH3 htmlH1
