@@ -4,10 +4,16 @@ my colorsheme.
 
 ## install details
 
-First put the RadicalGoodSpeed.vim file in your ~/.vim/colors/ folder  
-Then add the following command to your ~/.vimrc (without quotes) : 'colorscheme radicalgoodspeed' 
+Put the `RadicalGoodSpeed.vim` file in your `~/.vim/colors/` folder.
 
-### NeoBundle
+If you use [NeoBundle](https://github.com/Shougo/neobundle.vim), add the following:
+
+```vim
+NeoBundle 'gh:svjunic/RadicalGoodSpeed.vim.git'
 ```
-NeoBundle 'https://github.com/svjunic/RadicalGoodSpeed.vim.git'
+
+Next, add the following command to your `~/.vimrc`:
+
+```vim
+colorscheme radicalgoodspeed
 ```
