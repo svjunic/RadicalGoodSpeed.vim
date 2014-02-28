@@ -1,13 +1,14 @@
 " Vim color file
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
-" Last Change: 09-Jan-2014.
-" Version: 1.1
+" Last Change: 28-Feb-2014.
+" Version: 1.2
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
 "            0.3 - add setting for cterm
 "            1.0 - upload on www.vim.org
 "            1.1 - update TabLine settings
+"            1.2 - add vim-indent-guides highlight
 " Colors: 
 "   type   cterm   gui
 "   1      0       #000000
@@ -56,12 +57,12 @@ let colors_name = "radicalgoodspeed"
 " Current Line
 set cursorline
 hi clear CursorLine
-hi CursorLine guibg=black ctermbg=black
+hi CursorLine                   ctermbg=0   guibg=#000000
 
 
 " Default Colors
 hi Normal           ctermfg=251 ctermbg=234 guibg=#111111 guifg=#f0f0f0
-hi NonText          ctermfg=238 ctermbg=238 guibg=#2c3032 guifg=#2c3032 gui=none cterm=none
+hi NonText          ctermfg=233 ctermbg=233 guibg=#2c3032 guifg=#2c3032 gui=none cterm=none
 hi Cursor           ctermfg=11  ctermbg=251 guibg=#babdb6
 hi ICursor          ctermfg=247 ctermbg=251 guibg=#babdb6
 
@@ -193,3 +194,11 @@ hi link cssBoxAttr Constant
 hi link cssTextAttr Constant
 hi link cssColorAttr Constant
 hi link cssFontAttr Constant
+
+"nathanaelkane/vim-indent-guides
+"hi IndentGuidesOdd  ctermbg=234 guibg=#111111
+"hi IndentGuidesEven ctermbg=17  guibg=#262143
+hi IndentGuidesOdd  ctermbg=236 guibg=#090909
+hi IndentGuidesEven ctermbg=237 guibg=#000000
+""  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=234 guibg=#111111
+""  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=53  guibg=#262143
