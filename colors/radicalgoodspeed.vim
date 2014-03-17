@@ -1,7 +1,7 @@
 " Vim color file
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
-" Last Change: 28-Feb-2014.
+" Last Change: 17-Mar-2014.
 " Version: 1.2
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
@@ -43,6 +43,8 @@
 "   30     255     #ffffff
 "   31     59      #626262
 "   32     237     #696969
+"   33     177     #bd7ae0
+"   34     216     #f8a077
 
 set background=dark
 
@@ -120,14 +122,15 @@ hi Directory        ctermfg=255             guifg=#ffffff
 hi Comment          ctermfg=45              guifg=#00ccff
 hi Constant         ctermfg=154             guifg=#8ae234
 hi Number           ctermfg=154             guifg=#8ae234
-hi Statement        ctermfg=213             guifg=#ff88ee gui=none cterm=none
-hi Identifier       ctermfg=221             guifg=#ffd700
+hi Statement        ctermfg=213             guifg=#ff88ee               gui=none cterm=none
+hi Identifier       ctermfg=221             guifg=#ffd700               gui=none cterm=none
 hi PreProc          ctermfg=214             guifg=#fcaf3e
-hi Function         ctermfg=214             guifg=#fcaf3e
-hi Type             ctermfg=253             guifg=#e3e7df gui=none cterm=none
+hi Function         ctermfg=177             guifg=#bd7ae0
+hi Type             ctermfg=253             guifg=#e3e7df               gui=none cterm=none
 hi Keyword          ctermfg=254             guifg=#eeeeec
 hi Special          ctermfg=249             guifg=#888a85
 hi Error            ctermfg=244             guifg=#eeeeec guibg=#cc0000
+hi Operator         ctermfg=216             guifg=#f8a077               gui=none cterm=none
 
 " PHP
 hi phpRegionDelimiter             ctermfg=140             guifg=#ad7fa8
@@ -145,8 +148,8 @@ hi phpFunctions                   ctermfg=252             guifg=#d3d7cf
 hi phpParent                      ctermfg=249             guifg=#888a85
 
 " JavaScript
-hi javaScriptBraces               ctermfg=249             guifg=#888a85
-hi javaScriptOperator             ctermfg=249             guifg=#888a85
+"hi javaScriptBraces               ctermfg=249             guifg=#888a85
+"hi javaScriptOperator             ctermfg=249             guifg=#888a85
 
 " HTML
 hi htmlTag                        ctermfg=249             guifg=#888a85
@@ -196,9 +199,5 @@ hi link cssColorAttr Constant
 hi link cssFontAttr Constant
 
 "nathanaelkane/vim-indent-guides
-"hi IndentGuidesOdd  ctermbg=234 guibg=#111111
-"hi IndentGuidesEven ctermbg=17  guibg=#262143
 hi IndentGuidesOdd  ctermbg=236 guibg=#090909
 hi IndentGuidesEven ctermbg=237 guibg=#000000
-""  autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=234 guibg=#111111
-""  autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=53  guibg=#262143
