@@ -1,7 +1,7 @@
 " Vim color file
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
-" Last Change: 17-Mar-2014.
+" Last Change: 16-Jun-2014.
 " Version: 1.2
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
@@ -45,6 +45,7 @@
 "   32     237     #696969
 "   33     177     #bd7ae0
 "   34     216     #f8a077
+"   35     135     #ae5ff2
 
 set background=dark
 
@@ -99,7 +100,7 @@ hi DiffText         ctermfg=255 ctermbg=164 guibg=#b30487               gui=none
 
 " ** todo ** 
 " Folds
-hi Folded           ctermfg=252 ctermbg=18  guibg=#204a87 guifg=#d3d7cf
+hi Folded           ctermfg=135 ctermbg=0   guibg=#ae5ff2 guifg=#000000
 hi FoldColumn                   ctermbg=0   guibg=#000000 guifg=#3465a4
 
 " Specials
