@@ -1,6 +1,8 @@
 # RadicalGoodSpeed.vim
 
-my colorsheme.
+*RadicalGoodSpeed.vim* is a high-contrast Vim color scheme.
+
+![radicalgoodspeed](http://sv.junic.jp/img/github/screenshot.png)
 
 ## install details
 
@@ -17,3 +19,4 @@ Next, add the following command to your `~/.vimrc`:
 ```vim
 colorscheme radicalgoodspeed
 ```
+
