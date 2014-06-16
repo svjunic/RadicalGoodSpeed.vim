@@ -2,13 +2,14 @@
 " Maintaner: sv.junic(sv.junic@gmail.com)
 " URL: http://sv.junic.jp
 " Last Change: 16-Jun-2014.
-" Version: 1.2
+" Version: 1.3
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
 "            0.3 - add setting for cterm
 "            1.0 - upload on www.vim.org
 "            1.1 - update TabLine settings
 "            1.2 - add vim-indent-guides highlight
+"            1.3 - color modified
 " Colors: 
 "   type   cterm   gui
 "   1      0       #000000
@@ -87,7 +88,7 @@ hi LineNr           ctermfg=239 ctermbg=0   guibg=#000000 guifg=#3f4b4d
 hi SignColumn                   ctermbg=0   guibg=#000000
 
 " Pmenu
-hi Pmenu            ctermfg=254 ctermbg=246 guibg=#666666 guifg=#eeeeec
+hi Pmenu            ctermfg=15  ctermbg=60  guibg=#666666 guifg=#eeeeec
 hi PmenuSel         ctermfg=0   ctermbg=214 guibg=#fcaf3e guifg=#000000
 hi PmenuSbar                    ctermbg=240 guibg=#333333 
 hi PmenuThumb       ctermfg=255 ctermbg=255               guifg=#ffffff
