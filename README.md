@@ -2,7 +2,13 @@
 
 *RadicalGoodSpeed.vim* is a high-contrast Vim color scheme.
 
-![radicalgoodspeed](http://sv.junic.jp/img/github/screenshot.png)
+html/css
+
+![radicalgoodspeed_ss1](http://sv.junic.jp/img/github/screenshot.png)
+
+ruby
+
+![radicalgoodspeed_ss2](http://sv.junic.jp/img/github/screenshot2.png)
 
 ## install details
 
