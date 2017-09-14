@@ -4,11 +4,11 @@
 
 html/css
 
-![radicalgoodspeed_ss1](http://sv.junic.jp/img/github/screenshot.png)
+![radicalgoodspeed_ss1](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/screenshot.png)
 
 ruby
 
-![radicalgoodspeed_ss2](http://sv.junic.jp/img/github/screenshot2.png)
+![radicalgoodspeed_ss2](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/screenshot2.png)
 
 ## install details
 
