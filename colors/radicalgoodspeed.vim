@@ -69,7 +69,7 @@ hi CursorLine                   ctermbg=none   guibg=#000000
 
 " Default Colors
 hi Normal           ctermfg=251 ctermbg=none guibg=#111111 guifg=#f0f0f0
-hi NonText          ctermfg=233 ctermbg=233  guibg=#2c3032 guifg=#2c3032 gui=none cterm=none
+hi NonText          ctermfg=233 ctermbg=none guibg=#2c3032 guifg=#2c3032 gui=none cterm=none
 hi Cursor           ctermfg=11  ctermbg=251  guibg=#babdb6
 hi ICursor          ctermfg=247 ctermbg=251  guibg=#babdb6
 
@@ -85,9 +85,9 @@ hi Visual                       ctermbg=129  guibg=#9529F4
 hi MoreMsg          ctermfg=75                             guifg=#729fcf
 hi Question         ctermfg=154                            guifg=#8ae234 gui=none cterm=none
 hi WildMenu         ctermfg=254 ctermbg=233  guibg=#0e1416 guifg=#eeeeec
-hi LineNr           ctermfg=239 ctermbg=none guibg=#000000 guifg=#3f4b4d
+hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
 
-" syntasticのエラー出す部分
+" syntastic/ale で行番号横にエラーを表示する部分
 hi SignColumn                   ctermbg=0    guibg=#000000
 
 " Pmenu
