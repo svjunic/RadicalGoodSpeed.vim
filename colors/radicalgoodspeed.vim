@@ -227,3 +227,7 @@ hi IndentGuidesEven ctermbg=237 guibg=#000000
 " for spell check function
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=220 gui=underline guifg=#f9d749
+
+"" coc.nvim
+"highlight CocErrorSign ctermfg=15 ctermbg=196
+"highlight CocWarningSign ctermfg=0 ctermbg=172
