@@ -167,11 +167,17 @@ hi phpParent                      ctermfg=249             guifg=#888a85
 hi javaScriptBraces               ctermfg=199             guifg=#e7439c
 hi javaScriptOperator             ctermfg=226             guifg=#fff847
 hi javascriptObjectLabel          ctermfg=111             guifg=#7fa7f8
+hi javascriptIdentifier           ctermfg=227             guifg=#fff96c
 hi javascriptIdentifierName       ctermfg=15              guifg=#ffffff
+" hi javascriptIdentifierName       ctermfg=198             guifg=#f0417b
 hi javascriptGlobal               ctermfg=15              guifg=#ffffff
 hi javascriptBoolean              ctermfg=119             guifg=#93f369
 hi javascriptMethodName           ctermfg=198             guifg=#f0417b
+hi javascriptObjectMethodName     ctermfg=198             guifg=#f0417b
 hi javascriptFuncName             ctermfg=198             guifg=#f0417b
+
+" Sass
+hi sassClass        ctermfg=213              guifg=#ff88ee               gui=none cterm=none
 
 " HTML
 hi htmlTag                        ctermfg=249             guifg=#888a85
