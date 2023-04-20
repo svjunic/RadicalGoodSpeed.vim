@@ -238,8 +238,8 @@ hi SpellBad cterm=underline ctermfg=220 gui=underline guifg=#f9d749
 " フローティングウィンドウの背景
 hi CocFloating ctermbg=0 guibg=0
 " スクロールバー
-hi CocFloatSbar ctermbg=255 guibg=#ffffff
+hi CocFloatThumb ctermbg=255 guibg=#ffffff
 " スクロールバーの背景
-hi CocFloatThumb ctermbg=0 guibg=0
+hi CocFloatSbar ctermbg=0 guibg=0
 " メニューセレクト系
 hi CocMenuSel ctermbg=237 guibg=#696969
