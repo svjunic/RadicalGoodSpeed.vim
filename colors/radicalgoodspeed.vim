@@ -235,5 +235,11 @@ hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=220 gui=underline guifg=#f9d749
 
 "" coc.nvim
-"highlight CocErrorSign ctermfg=15 ctermbg=196
-"highlight CocWarningSign ctermfg=0 ctermbg=172
+" フローティングウィンドウの背景
+hi CocFloating ctermbg=0 guibg=0
+" スクロールバー
+hi CocFloatSbar ctermbg=255 guibg=#ffffff
+" スクロールバーの背景
+hi CocFloatThumb ctermbg=0 guibg=0
+" メニューセレクト系
+hi CocMenuSel ctermbg=237 guibg=#696969
