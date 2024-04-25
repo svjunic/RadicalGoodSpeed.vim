@@ -95,9 +95,7 @@ hi MoreMsg          ctermfg=75                             guifg=#729fcf
 hi Question         ctermfg=154                            guifg=#8ae234 gui=none cterm=none
 hi WildMenu         ctermfg=254 ctermbg=233  guibg=#0e1416 guifg=#eeeeec
 hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
-
-" syntastic/ale で行番号横にエラーを表示する部分
-hi SignColumn                   ctermbg=0    guibg=#000000
+hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Pmenu
 hi Pmenu            ctermfg=15  ctermbg=60   guibg=#666666 guifg=#eeeeec
@@ -111,7 +109,6 @@ hi DiffAdd          ctermfg=255 ctermbg=238  guibg=#1f2b2d
 hi DiffChange       ctermfg=255 ctermbg=17   guibg=#003C70
 hi DiffText         ctermfg=255 ctermbg=164  guibg=#b30487               gui=none cterm=none
 
-" ** todo **
 " Folds
 hi Folded           ctermfg=135 ctermbg=0    guibg=#ae5ff2 guifg=#000000
 hi FoldColumn                   ctermbg=0    guibg=#000000 guifg=#3465a4
@@ -122,6 +119,13 @@ hi Title            ctermfg=214                           guifg=#fcaf3e
 "hi Todo             ctermfg=82  ctermbg=196  guibg=#fe2626 guifg=#5ee710 gui=underline cterm=underline
 hi Todo             ctermfg=82  ctermbg=0    guibg=#fe2626 guifg=#5ee710 gui=underline cterm=underline
 hi SpecialKey       ctermfg=60                             guifg=#ef2929 gui=underline cterm=underline
+
+" Diagnostic
+hi DiagnosticError  ctermfg=197                            guibg=#ef2929
+hi DiagnosticWarn   ctermfg=221                            guibg=#ffd700
+hi DiagnosticInfo   ctermfg=45                             guibg=#00ccff
+hi DiagnosticHint   ctermfg=214                            guibg=#fcaf3e
+hi DiagnosticOk     ctermfg=154                            guibg=#8ae234
 
 " Tabs
 hi TabLine          ctermfg=251 ctermbg=59   guibg=#626262 guifg=#babdb6 gui=none cterm=none
