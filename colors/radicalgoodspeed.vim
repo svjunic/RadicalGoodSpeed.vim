@@ -59,6 +59,9 @@
 "   42     199     #e7439c
 "   43     226     #fff847
 "   44     198     #f0417b
+"   45     234     #161616
+"   46     207     #fc24ff
+"   47     207     #fc24ff
 
 set background=dark
 
@@ -98,10 +101,11 @@ hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
 hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Pmenu
-hi Pmenu            ctermfg=15  ctermbg=60   guibg=#666666 guifg=#eeeeec
-hi PmenuSel         ctermfg=0   ctermbg=214  guibg=#fcaf3e guifg=#000000
+hi Pmenu            ctermfg=234 ctermbg=15   guifg=#161616 guifg=#000000
+hi PmenuSel         ctermfg=234 ctermbg=200  guifg=#161616 guifg=#fc00d6
 hi PmenuSbar                    ctermbg=240  guibg=#333333
 hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#ffffff
+
 
 " Diff
 hi DiffDelete       ctermfg=125 ctermbg=233  guibg=#0e1416 guifg=#4D3800
@@ -261,7 +265,3 @@ hi CocMenuSel ctermbg=237 guibg=#696969
 " LSP Hover window colors
 hi FloatBorder ctermfg=207             guifg=#fc24ff
 hi NormalFloat ctermfg=234             guifg=#161616
-
-" 保管メニュー
-hi Pmenu       ctermfg=234 ctermbg=15  guifg=#161616 guifg=#000000
-hi PmenuSel    ctermfg=234 ctermbg=200 guifg=#161616 guifg=#fc00d6
