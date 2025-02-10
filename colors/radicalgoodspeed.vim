@@ -263,5 +263,5 @@ hi CocFloatSbar ctermbg=0 guibg=0
 hi CocMenuSel ctermbg=237 guibg=#696969
 
 " LSP Hover window colors
-hi FloatBorder ctermfg=207             guifg=#fc24ff
-hi NormalFloat ctermfg=234             guifg=#161616
+hi FloatBorder ctermfg=127                            guibg=#ffff00
+hi NormalFloat ctermfg=15                             guibg=#ff00ff
