@@ -238,7 +238,17 @@ hi IndentGuidesEven ctermbg=237 guibg=#000000
 hi clear SpellBad
 hi SpellBad cterm=underline ctermfg=220 gui=underline guifg=#f9d749
 
-"" coc.nvim
+
+" LSP Hover window colors
+hi LspFloatWinNormal ctermfg=251 ctermbg=234 guifg=#f0f0f0 guibg=#1a1a1a
+hi LspFloatWinBorder ctermfg=240 guifg=#333333
+
+" LSP Reference highlights
+hi LspReferenceText ctermbg=236 guibg=#1e2426
+hi LspReferenceRead ctermbg=236 guibg=#1e2426
+hi LspReferenceWrite ctermbg=236 guibg=#1e2426
+
+"" coc.nvim（メンテナンス減るかも）
 " フローティングウィンドウの背景
 hi CocFloating ctermbg=0 guibg=0
 " スクロールバー
@@ -247,3 +257,11 @@ hi CocFloatThumb ctermbg=255 guibg=#ffffff
 hi CocFloatSbar ctermbg=0 guibg=0
 " メニューセレクト系
 hi CocMenuSel ctermbg=237 guibg=#696969
+
+" LSP Hover window colors
+hi FloatBorder ctermfg=207             guifg=#fc24ff
+hi NormalFloat ctermfg=234             guifg=#161616
+
+" 保管メニュー
+hi Pmenu       ctermfg=234 ctermbg=15  guifg=#161616 guifg=#000000
+hi PmenuSel    ctermfg=234 ctermbg=200 guifg=#161616 guifg=#fc00d6
