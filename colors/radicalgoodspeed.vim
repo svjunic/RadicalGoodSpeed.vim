@@ -101,8 +101,8 @@ hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
 hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Pmenu
-hi Pmenu            ctermfg=234 ctermbg=15   guifg=#161616 guifg=#000000
-hi PmenuSel         ctermfg=234 ctermbg=234  guifg=#161616 guifg=#ffd700
+hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#000000
+hi PmenuSel         ctermfg=221 ctermbg=234  guibg=#161616 guifg=#ffd700
 hi PmenuSbar                    ctermbg=240  guibg=#333333
 hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#ffffff
 
