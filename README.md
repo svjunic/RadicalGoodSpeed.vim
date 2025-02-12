@@ -4,25 +4,27 @@
 
 ## Screenshot
 
-### es6
+### TypeScript
 
-![es6](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/es6.png)
+![TypeScript](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/ts.png)
 
 This capture uses the following Javascript syntax:  
- - https://github.com/othree/yajs.vim  
- - https://github.com/othree/es.next.syntax.vim  
+ - nvim-treesitter/nvim-treesitter
+ - neovim/nvim-lspconfig
+ - hrsh7th/nvim-cmp
+ - hrsh7th/cmp-nvim-lsp
 
 Please bundling.
 
 
-### html/css
+### html
 
-![html-css](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/html-css.png)
+![html](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/html.png)
 
 
-### ruby
+### Python
 
-![es6](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/rb.png)
+![Python](https://raw.githubusercontent.com/wiki/svjunic/RadicalGoodSpeed.vim/readme/img/py.png)
 
 ## install details
 
