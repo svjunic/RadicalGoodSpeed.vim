@@ -261,3 +261,13 @@ hi CocMenuSel ctermbg=237 guibg=#696969
 " LSP Hover window colors
 hi FloatBorder ctermfg=127                            guibg=#ffff00
 hi NormalFloat ctermfg=15                             guibg=#ff00ff
+
+" for hrsh7th/nvim-cmp
+hi CmpItemAbbr           ctermfg=251 guifg=#f0f0f0
+hi CmpItemAbbrMatch      ctermfg=214 guifg=#fcaf3e gui=bold
+hi CmpItemAbbrMatchFuzzy ctermfg=214 guifg=#fcaf3e gui=bold
+hi CmpItemMenu           ctermfg=45  guifg=#00ccff
+hi CmpItemKind           ctermfg=177 guifg=#bd7ae0
+
+hi link CmpPmenu Pmenu
+hi link CmpDocumentation Pmenu
