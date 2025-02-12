@@ -102,7 +102,7 @@ hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Pmenu
 hi Pmenu            ctermfg=234 ctermbg=15   guifg=#161616 guifg=#000000
-hi PmenuSel         ctermfg=234 ctermbg=200  guifg=#161616 guifg=#fc00d6
+hi PmenuSel         ctermfg=234 ctermbg=221  guifg=#161616 guifg=#ffd700
 hi PmenuSbar                    ctermbg=240  guibg=#333333
 hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#ffffff
 
@@ -252,14 +252,10 @@ hi LspReferenceText ctermbg=236 guibg=#1e2426
 hi LspReferenceRead ctermbg=236 guibg=#1e2426
 hi LspReferenceWrite ctermbg=236 guibg=#1e2426
 
-"" coc.nvim（メンテナンス減るかも）
-" フローティングウィンドウの背景
+"" coc.nvim (may reduce maintenance)
 hi CocFloating ctermbg=0 guibg=0
-" スクロールバー
 hi CocFloatThumb ctermbg=255 guibg=#ffffff
-" スクロールバーの背景
 hi CocFloatSbar ctermbg=0 guibg=0
-" メニューセレクト系
 hi CocMenuSel ctermbg=237 guibg=#696969
 
 " LSP Hover window colors
