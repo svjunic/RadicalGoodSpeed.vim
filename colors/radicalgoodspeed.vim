@@ -101,8 +101,8 @@ hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
 hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Pmenu
-hi Pmenu            ctermfg=234 ctermbg=15   guifg=#161616 guifg=#000000
-hi PmenuSel         ctermfg=234 ctermbg=200  guifg=#161616 guifg=#fc00d6
+hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#000000
+hi PmenuSel         ctermfg=214 ctermbg=234  guibg=#161616 guifg=#fcaf3e
 hi PmenuSbar                    ctermbg=240  guibg=#333333
 hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#ffffff
 
@@ -252,16 +252,21 @@ hi LspReferenceText ctermbg=236 guibg=#1e2426
 hi LspReferenceRead ctermbg=236 guibg=#1e2426
 hi LspReferenceWrite ctermbg=236 guibg=#1e2426
 
-"" coc.nvim（メンテナンス減るかも）
-" フローティングウィンドウの背景
+"" coc.nvim (may reduce maintenance)
 hi CocFloating ctermbg=0 guibg=0
-" スクロールバー
 hi CocFloatThumb ctermbg=255 guibg=#ffffff
-" スクロールバーの背景
 hi CocFloatSbar ctermbg=0 guibg=0
-" メニューセレクト系
 hi CocMenuSel ctermbg=237 guibg=#696969
 
 " LSP Hover window colors
 hi FloatBorder ctermfg=127                            guibg=#ffff00
 hi NormalFloat ctermfg=15                             guibg=#ff00ff
+
+" for hrsh7th/nvim-cmp
+hi link CmpPmenu Pmenu
+hi CmpItemAbbr           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
+hi CmpItemAbbrMatch      ctermbg=111 ctermfg=0 guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
+hi CmpItemAbbrMatchFuzzy ctermbg=111 ctermfg=0 guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
+hi CmpItemMenu           ctermbg=1   ctermfg=1 guibg=#ff0000 guifg=#ff0000
+hi CmpItemKind           ctermbg=246 ctermfg=0 guibg=#666666 guifg=#000000
+hi CmpDocumentation      ctermbg=0    ctermfg=15  guibg=#ffffff guifg=#000000
