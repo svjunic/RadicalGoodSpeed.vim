@@ -263,11 +263,11 @@ hi FloatBorder ctermfg=127                            guibg=#ffff00
 hi NormalFloat ctermfg=15                             guibg=#ff00ff
 
 " for hrsh7th/nvim-cmp
-hi CmpItemAbbr           ctermfg=251 guifg=#f0f0f0
-hi CmpItemAbbrMatch      ctermfg=214 guifg=#fcaf3e gui=bold
-hi CmpItemAbbrMatchFuzzy ctermfg=214 guifg=#fcaf3e gui=bold
-hi CmpItemMenu           ctermfg=45  guifg=#00ccff
-hi CmpItemKind           ctermfg=177 guifg=#bd7ae0
-
 hi link CmpPmenu Pmenu
-hi link CmpDocumentation Pmenu
+hi CmpItemAbbr           ctermbg=15  ctermfg=0 guibg=#ffffff guifg=#000000
+hi CmpItemAbbrMatch      ctermbg=111 ctermfg=0 guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
+hi CmpItemAbbrMatchFuzzy ctermbg=111 ctermfg=0 guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
+hi CmpItemMenu           ctermbg=1   ctermfg=1 guibg=#ff0000 guifg=#ff0000
+hi CmpItemKind           ctermbg=246 ctermfg=0 guibg=#666666 guifg=#000000
+hi link CmpDocumentation CmpItemAbbr
+hi link CmpDocumentationBorder CmpItemAbbrMatch
