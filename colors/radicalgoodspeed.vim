@@ -253,9 +253,9 @@ hi LspReferenceRead ctermbg=236 guibg=#1e2426
 hi LspReferenceWrite ctermbg=236 guibg=#1e2426
 
 "" coc.nvim (may reduce maintenance)
-hi CocFloating ctermbg=0 guibg=0
+hi CocFloating ctermbg=0 guibg=#000000
 hi CocFloatThumb ctermbg=255 guibg=#ffffff
-hi CocFloatSbar ctermbg=0 guibg=0
+hi CocFloatSbar ctermbg=0 guibg=#000000
 hi CocMenuSel ctermbg=237 guibg=#696969
 
 " LSP Hover window colors
