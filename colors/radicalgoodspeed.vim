@@ -137,7 +137,7 @@ hi TabLineFill      ctermfg=59  ctermbg=237  guibg=#696969 guifg=#626262 gui=und
 hi TabLineSel       ctermfg=255 ctermbg=164  guibg=#b30487 guifg=#ffffff gui=bold cterm=bold
 
 " Matches
-hi MatchParen       ctermfg=239 ctermbg=214  guibg=#fcaf3e guifg=#2e3436
+hi MatchParen       cterm=italic,bold gui=italic,bold
 
 " Tree
 hi Directory        ctermfg=255              guifg=#ffffff
