@@ -100,6 +100,9 @@ hi WildMenu         ctermfg=254 ctermbg=233  guibg=#0e1416 guifg=#eeeeec
 hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
 hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
+" Snippet
+hi SnippetTabstop   ctermbg=none             guibg=none
+
 " Pmenu
 hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#000000
 hi PmenuSel         ctermfg=214 ctermbg=234  guibg=#161616 guifg=#fcaf3e
