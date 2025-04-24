@@ -101,7 +101,7 @@ hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
 hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Snippet
-hi SnippetTabstop   ctermbg=none             guibg=none
+hi SnippetTabstop   ctermbg=none
 
 " Pmenu
 hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#000000
