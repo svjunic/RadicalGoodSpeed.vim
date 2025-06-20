@@ -270,11 +270,11 @@ hi link CmpPmenu Pmenu
 hi CmpItemAbbr           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
 hi CmpItemAbbrMatch      ctermbg=111  ctermfg=0   guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
 hi CmpItemAbbrMatchFuzzy ctermbg=111  ctermfg=0   guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
-hi CmpItemMenu           ctermbg=0    ctermfg=15  guibg=#000000 guifg=#ffffff
+hi CmpItemMenu           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
 hi CmpItemKind           ctermbg=246  ctermfg=0   guibg=#666666 guifg=#000000
 hi CmpDocumentation      ctermbg=0    ctermfg=15  guibg=#ffffff guifg=#000000
 
-hi CmpItemKindVariable   ctermbg=0    ctermfg=15  guibg=#000000 guifg=#ffffff
-hi CmpItemKindFunction   ctermbg=0    ctermfg=15  guibg=#000000 guifg=#ffffff
-hi CmpItemKindKeyword    ctermbg=0    ctermfg=15  guibg=#000000 guifg=#ffffff
-hi CmpItemKindClass      ctermbg=0    ctermfg=15  guibg=#000000 guifg=#ffffff
+hi CmpItemKindVariable   ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
+hi CmpItemKindFunction   ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
+hi CmpItemKindKeyword    ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
+hi CmpItemKindClass      ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
