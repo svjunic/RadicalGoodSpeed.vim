@@ -276,5 +276,5 @@ hi CmpDocumentation      ctermbg=0    ctermfg=15  guibg=#ffffff guifg=#000000
 
 hi CmpItemKindVariable   ctermbg=79   ctermfg=0   guibg=#1cd69d guifg=#000000
 hi CmpItemKindFunction   ctermbg=165  ctermfg=0   guibg=#e300ff guifg=#000000
-hi CmpItemKindKeyword    ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
-hi CmpItemKindClass      ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
+hi CmpItemKindKeyword    ctermbg=209  ctermfg=0   guibg=#fd6944 guifg=#000000
+hi CmpItemKindClass      ctermbg=226  ctermfg=0   guibg=#ffff0b guifg=#000000
