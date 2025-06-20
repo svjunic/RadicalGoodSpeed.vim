@@ -274,7 +274,7 @@ hi CmpItemMenu           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
 hi CmpItemKind           ctermbg=246  ctermfg=0   guibg=#666666 guifg=#000000
 hi CmpDocumentation      ctermbg=0    ctermfg=15  guibg=#ffffff guifg=#000000
 
-hi CmpItemKindVariable   ctermbg=62   ctermfg=0   guibg=#4c45d7 guifg=#000000
+hi CmpItemKindVariable   ctermbg=65   ctermfg=0   guibg=#1cd69d guifg=#000000
 hi CmpItemKindFunction   ctermbg=165  ctermfg=0   guibg=#e300ff guifg=#000000
 hi CmpItemKindKeyword    ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
 hi CmpItemKindClass      ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
