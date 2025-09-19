@@ -278,3 +278,69 @@ hi CmpItemKindVariable   ctermbg=79   ctermfg=0   guibg=#1cd69d guifg=#000000
 hi CmpItemKindFunction   ctermbg=165  ctermfg=0   guibg=#e300ff guifg=#000000
 hi CmpItemKindKeyword    ctermbg=209  ctermfg=0   guibg=#fd6944 guifg=#000000
 hi CmpItemKindClass      ctermbg=226  ctermfg=0   guibg=#ffff0b guifg=#000000
+
+" ------------------------------------------------------------
+" Treesitter & LSP Semantic Token links (Neovim 0.11+)
+" ------------------------------------------------------------
+if has('nvim')
+  " --- Treesitter base links ---
+  hi! link @function              Function
+  hi! link @function.method       Function
+  hi! link @constructor           Function
+  hi! link @method                Function
+  hi! link @namespace             Identifier
+  hi! link @variable              Identifier
+  hi! link @variable.parameter    Identifier
+  hi! link @parameter             Identifier
+  hi! link @property              Identifier
+  hi! link @field                 Identifier
+  hi! link @type                  Type
+  hi! link @type.builtin          Type
+  hi! link @type.definition       Type
+  hi! link @type.qualifier        Type
+  hi! link @keyword               Keyword
+  hi! link @operator              Operator
+  hi! link @comment               Comment
+  hi! link @string                Constant
+  hi! link @string.regex          Constant
+  hi! link @character             Constant
+  hi! link @boolean               Constant
+  hi! link @number                Number
+
+  " --- LSP semantic tokens → existing groups ---
+  hi! link @lsp.type.class            Type
+  hi! link @lsp.type.interface        Type
+  hi! link @lsp.type.enum             Type
+  hi! link @lsp.type.type             Type
+  hi! link @lsp.type.typeParameter    Type
+  hi! link @lsp.type.namespace        Identifier
+
+  hi! link @lsp.type.function         Function
+  hi! link @lsp.type.method           Function
+  hi! link @lsp.type.constructor      Function
+
+  hi! link @lsp.type.variable         Identifier
+  hi! link @lsp.type.parameter        Identifier
+  hi! link @lsp.type.property         Identifier
+  hi! link @lsp.type.enumMember       Constant
+  hi! link @lsp.type.event            Constant
+
+  hi! link @lsp.type.keyword          Keyword
+  hi! link @lsp.type.modifier         Keyword
+  hi! link @lsp.type.operator         Operator
+  hi! link @lsp.type.comment          Comment
+  hi! link @lsp.type.string           Constant
+  hi! link @lsp.type.number           Number
+  hi! link @lsp.type.boolean          Constant
+  hi! link @lsp.type.regexp           Constant
+  hi! link @lsp.type.formatSpecifier  Special
+
+  " --- LSP semantic token modifiers / diagnostics-like styles ---
+  " Mark deprecated with strikethrough, unused with underline (visual hint)
+  hi! @lsp.mod.deprecated gui=strikethrough cterm=strikethrough
+  hi! @lsp.mod.unused     gui=underline     cterm=underline
+
+  " Readonly variables/properties feel like constants in this theme
+  hi! link @lsp.typemod.variable.readonly  Constant
+  hi! link @lsp.typemod.property.readonly  Constant
+endif
