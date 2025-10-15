@@ -1,8 +1,7 @@
 " Vim color file
-" Maintaner: sv.junic(sv.junic@gmail.com)
-" URL: http://sv.junic.jp
+" Maintainer: sv.junic(sv.junic@gmail.com) URL: http://sv.junic.jp
 " Last Change: 25-Jun-2015.
-" Version: 1.3
+" Version: 1.6
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
 "            0.3 - add setting for cterm
@@ -12,6 +11,7 @@
 "            1.3 - color modified
 "            1.4 - color modified
 "            1.5 - changed color. statement, number, javascriptObjectLabel
+"            1.6 - fix typos in header and deduplicate color entries
 "
 " Colors:
 "   type   cterm   gui
@@ -61,7 +61,6 @@
 "   44     198     #f0417b
 "   45     234     #161616
 "   46     207     #fc24ff
-"   47     207     #fc24ff
 
 set background=dark
 
@@ -80,10 +79,10 @@ hi CursorLine                   ctermbg=none   guibg=#000000
 
 
 " Default Colors
-hi Normal           ctermfg=251 ctermbg=none guibg=none    guifg=#f0f0f0
-hi NonText          ctermfg=233 ctermbg=none guibg=none    guifg=#2c3032 gui=none cterm=none
-hi Cursor           ctermfg=11  ctermbg=251  guibg=#babdb6
-hi ICursor          ctermfg=247 ctermbg=251  guibg=#babdb6
+hi Normal           ctermfg=251 ctermbg=none guibg=none    guifg=#c6c6c6
+hi NonText          ctermfg=233 ctermbg=none guibg=none    guifg=#121212 gui=none cterm=none
+hi Cursor           ctermfg=11  ctermbg=251  guibg=#c6c6c6
+hi ICursor          ctermfg=247 ctermbg=251  guibg=#c6c6c6
 
 " Search
 hi Search           ctermfg=239 ctermbg=214  guibg=#fcaf3e guifg=#2e3436
@@ -96,18 +95,18 @@ hi VertSplit        ctermfg=244 ctermbg=249  guibg=#888a85 guifg=#555753 gui=non
 hi Visual                       ctermbg=129  guibg=#9529F4
 hi MoreMsg          ctermfg=75                             guifg=#729fcf
 hi Question         ctermfg=154                            guifg=#8ae234 gui=none cterm=none
-hi WildMenu         ctermfg=254 ctermbg=233  guibg=#0e1416 guifg=#eeeeec
-hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#3f4b4d
+hi WildMenu         ctermfg=254 ctermbg=233  guibg=#121212 guifg=#e4e4e4
+hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#4e4e4e
 hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
 " Snippet
 hi SnippetTabstop   ctermbg=none
 
 " Pmenu
-hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#000000
-hi PmenuSel         ctermfg=214 ctermbg=234  guibg=#161616 guifg=#fcaf3e
-hi PmenuSbar                    ctermbg=240  guibg=#333333
-hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#ffffff
+hi Pmenu            ctermfg=234 ctermbg=15   guibg=#ffffff guifg=#1c1c1c
+hi PmenuSel         ctermfg=214 ctermbg=234  guibg=#1c1c1c guifg=#fcaf3e
+hi PmenuSbar                    ctermbg=240  guibg=#585858
+hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#eeeeee
 
 
 " Diff
@@ -135,9 +134,9 @@ hi DiagnosticHint   ctermfg=214                            guibg=#fcaf3e
 hi DiagnosticOk     ctermfg=154                            guibg=#8ae234
 
 " Tabs
-hi TabLine          ctermfg=251 ctermbg=59   guibg=#626262 guifg=#babdb6 gui=none cterm=none
-hi TabLineFill      ctermfg=59  ctermbg=237  guibg=#696969 guifg=#626262 gui=underline cterm=underline
-hi TabLineSel       ctermfg=255 ctermbg=164  guibg=#b30487 guifg=#ffffff gui=bold cterm=bold
+hi TabLine          ctermfg=251 ctermbg=59   guibg=#5f5f5f guifg=#c6c6c6 gui=none cterm=none
+hi TabLineFill      ctermfg=59  ctermbg=237  guibg=#3a3a3a guifg=#5f5f5f gui=underline cterm=underline
+hi TabLineSel       ctermfg=255 ctermbg=164  guibg=#d70087 guifg=#eeeeee gui=bold cterm=bold
 
 " Matches
 hi MatchParen       cterm=italic,bold gui=italic,bold
@@ -238,32 +237,32 @@ hi link cssColorAttr Constant
 hi link cssFontAttr Constant
 
 "nathanaelkane/vim-indent-guides
-hi IndentGuidesOdd  ctermbg=236 guibg=#090909
-hi IndentGuidesEven ctermbg=237 guibg=#000000
+hi IndentGuidesOdd  ctermbg=236 guibg=#303030
+hi IndentGuidesEven ctermbg=237 guibg=#3a3a3a
 
 " for spell check function
 hi clear SpellBad
-hi SpellBad cterm=underline ctermfg=220 gui=underline guifg=#f9d749
+hi SpellBad cterm=underline ctermfg=220 gui=underline guifg=#ffd700
 
 
 " LSP Hover window colors
-hi LspFloatWinNormal ctermfg=251 ctermbg=234 guifg=#f0f0f0 guibg=#1a1a1a
-hi LspFloatWinBorder ctermfg=240 guifg=#333333
+hi LspFloatWinNormal ctermfg=251 ctermbg=234 guifg=#c6c6c6 guibg=#1c1c1c
+hi LspFloatWinBorder ctermfg=240 guifg=#585858
 
 " LSP Reference highlights
-hi LspReferenceText ctermbg=236 guibg=#1e2426
-hi LspReferenceRead ctermbg=236 guibg=#1e2426
-hi LspReferenceWrite ctermbg=236 guibg=#1e2426
+hi LspReferenceText ctermbg=236 guibg=#303030
+hi LspReferenceRead ctermbg=236 guibg=#303030
+hi LspReferenceWrite ctermbg=236 guibg=#303030
 
 "" coc.nvim (may reduce maintenance)
 hi CocFloating ctermbg=0 guibg=#000000
-hi CocFloatThumb ctermbg=255 guibg=#ffffff
+hi CocFloatThumb ctermbg=255 guibg=#eeeeee
 hi CocFloatSbar ctermbg=0 guibg=#000000
-hi CocMenuSel ctermbg=237 guibg=#696969
+hi CocMenuSel ctermbg=237 guibg=#3a3a3a
 
 " LSP Hover window colors
-hi FloatBorder ctermfg=127                            guibg=#ffff00
-hi NormalFloat ctermfg=15                             guibg=#ff00ff
+hi FloatBorder ctermfg=127                            guibg=#af00ff
+hi NormalFloat ctermfg=15                             guibg=#ffffff
 
 " for hrsh7th/nvim-cmp
 hi link CmpPmenu Pmenu
@@ -271,8 +270,8 @@ hi CmpItemAbbr           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
 hi CmpItemAbbrMatch      ctermbg=111  ctermfg=0   guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
 hi CmpItemAbbrMatchFuzzy ctermbg=111  ctermfg=0   guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
 hi CmpItemMenu           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
-hi CmpItemKind           ctermbg=246  ctermfg=0   guibg=#666666 guifg=#000000
-hi CmpDocumentation      ctermbg=0    ctermfg=15  guibg=#ffffff guifg=#000000
+hi CmpItemKind           ctermbg=246  ctermfg=0   guibg=#949494 guifg=#000000
+hi CmpDocumentation      ctermbg=0    ctermfg=15  guibg=#000000 guifg=#eeeeee
 
 hi CmpItemKindVariable   ctermbg=79   ctermfg=0   guibg=#1cd69d guifg=#000000
 hi CmpItemKindFunction   ctermbg=165  ctermfg=0   guibg=#e300ff guifg=#000000
