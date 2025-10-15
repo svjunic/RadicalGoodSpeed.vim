@@ -80,8 +80,8 @@ hi CursorLine                   ctermbg=none   guibg=#000000
 
 
 " Default Colors
-hi Normal           ctermfg=251 ctermbg=none guibg=#111111 guifg=#f0f0f0
-hi NonText          ctermfg=233 ctermbg=none guibg=#2c3032 guifg=#2c3032 gui=none cterm=none
+hi Normal           ctermfg=251 ctermbg=none guibg=none    guifg=#f0f0f0
+hi NonText          ctermfg=233 ctermbg=none guibg=none    guifg=#2c3032 gui=none cterm=none
 hi Cursor           ctermfg=11  ctermbg=251  guibg=#babdb6
 hi ICursor          ctermfg=247 ctermbg=251  guibg=#babdb6
 
