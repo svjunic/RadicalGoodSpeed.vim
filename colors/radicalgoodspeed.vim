@@ -157,7 +157,7 @@ hi Keyword          ctermfg=254              guifg=#eeeeec
 hi Special          ctermfg=249              guifg=#888a85
 hi Error            ctermfg=244              guifg=#eeeeec guibg=#cc0000
 hi Operator         ctermfg=216              guifg=#f8a077               gui=none cterm=none
-hi Delimiter        ctermfg=140              guifg=#ad7fa8
+hi Delimiter        ctermfg=14               guifg=#ffffff
 
 " PHP
 hi phpRegionDelimiter             ctermfg=140             guifg=#ad7fa8
