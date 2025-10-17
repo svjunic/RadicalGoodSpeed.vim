@@ -30,7 +30,7 @@
 "   13     244     #555753
 "   14     246     #666666
 "   15     75      #729fcf
-"   16     249     #888a85
+"   16     249     #a3a3a3
 "   17     154     #8ae234
 "   18     116     #8cd0d3
 "   19     129     #9529F4
@@ -154,25 +154,25 @@ hi PreProc          ctermfg=214              guifg=#fcaf3e
 hi Function         ctermfg=177              guifg=#bd7ae0
 hi Type             ctermfg=253              guifg=#e3e7df               gui=none cterm=none
 hi Keyword          ctermfg=254              guifg=#eeeeec
-hi Special          ctermfg=249              guifg=#888a85
+hi Special          ctermfg=249              guifg=#a3a3a3
 hi Error            ctermfg=244              guifg=#eeeeec guibg=#cc0000
 hi Operator         ctermfg=216              guifg=#f8a077               gui=none cterm=none
 hi Delimiter        ctermfg=252              guifg=#d3d7cf
 
 " PHP
 hi phpRegionDelimiter             ctermfg=140             guifg=#ad7fa8
-hi phpPropertySelector            ctermfg=249             guifg=#888a85
-hi phpPropertySelectorInString    ctermfg=249             guifg=#888a85
-hi phpOperator                    ctermfg=249             guifg=#888a85
-hi phpArrayPair                   ctermfg=249             guifg=#888a85
-hi phpAssignByRef                 ctermfg=249             guifg=#888a85
-hi phpRelation                    ctermfg=249             guifg=#888a85
-hi phpMemberSelector              ctermfg=249             guifg=#888a85
-hi phpUnknownSelector             ctermfg=249             guifg=#888a85
+hi phpPropertySelector            ctermfg=249             guifg=#a3a3a3
+hi phpPropertySelectorInString    ctermfg=249             guifg=#a3a3a3
+hi phpOperator                    ctermfg=249             guifg=#a3a3a3
+hi phpArrayPair                   ctermfg=249             guifg=#a3a3a3
+hi phpAssignByRef                 ctermfg=249             guifg=#a3a3a3
+hi phpRelation                    ctermfg=249             guifg=#a3a3a3
+hi phpMemberSelector              ctermfg=249             guifg=#a3a3a3
+hi phpUnknownSelector             ctermfg=249             guifg=#a3a3a3
 hi phpVarSelector                 ctermfg=251             guifg=#babdb6
-hi phpSemicolon                   ctermfg=249             guifg=#888a85 gui=none cterm=none
+hi phpSemicolon                   ctermfg=249             guifg=#a3a3a3 gui=none cterm=none
 hi phpFunctions                   ctermfg=252             guifg=#d3d7cf
-hi phpParent                      ctermfg=249             guifg=#888a85
+hi phpParent                      ctermfg=249             guifg=#a3a3a3
 
 " JavaScript
 hi javaScriptBraces               ctermfg=199             guifg=#e7439c
@@ -191,8 +191,8 @@ hi javascriptFuncName             ctermfg=198             guifg=#f0417b
 hi sassClass        ctermfg=213              guifg=#ff88ee               gui=none cterm=none
 
 " HTML
-hi htmlTag                        ctermfg=249             guifg=#888a85
-hi htmlEndTag                     ctermfg=249             guifg=#888a85
+hi htmlTag                        ctermfg=249             guifg=#a3a3a3
+hi htmlEndTag                     ctermfg=249             guifg=#a3a3a3
 hi htmlTagName                    ctermfg=255             guifg=#ffffff
 hi htmlSpecialTagName             ctermfg=251             guifg=#babdb6
 hi htmlArg                        ctermfg=252             guifg=#d3d7cf
@@ -221,7 +221,7 @@ hi link cssTextProp cssUIProp
 hi link cssColorProp cssUIProp
 hi link cssFontProp cssUIProp
 hi cssPseudoClassId                         ctermfg=254 guifg=#eeeeec
-hi cssBraces                                ctermfg=249 guifg=#888a85
+hi cssBraces                                ctermfg=249 guifg=#a3a3a3
 hi cssIdentifier                            ctermfg=214 guifg=#fcaf3e
 hi cssTagName                               ctermfg=214 guifg=#fcaf3e
 hi link cssInclude Function
