@@ -103,11 +103,10 @@ hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 hi SnippetTabstop   ctermbg=none
 
 " Pmenu
-hi Pmenu            ctermfg=234 ctermbg=15   guibg=#ffffff guifg=#1c1c1c
-hi PmenuSel         ctermfg=214 ctermbg=234  guibg=#1c1c1c guifg=#fcaf3e
-hi PmenuSbar                    ctermbg=240  guibg=#585858
-hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#eeeeee
-
+hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#ffffff
+hi PmenuSel         ctermfg=214 ctermbg=234  guibg=#161616 guifg=#fcaf3e
+hi PmenuSbar                    ctermbg=240  guibg=#333333
+hi PmenuThumb       ctermfg=255 ctermbg=255                guifg=#ffffff
 
 " Diff
 hi DiffDelete       ctermfg=125 ctermbg=233  guibg=#0e1416 guifg=#4D3800
