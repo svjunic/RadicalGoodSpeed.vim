@@ -267,7 +267,7 @@ hi NormalFloat ctermfg=15                             guibg=#ffffff
 
 " for hrsh7th/nvim-cmp
 hi link CmpPmenu Pmenu
-hi CmpItemAbbr           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
+hi CmpItemAbbr           ctermbg=15   ctermfg=0   guibg=#000000 guifg=#ffffff
 hi CmpItemAbbrMatch      ctermbg=111  ctermfg=0   guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
 hi CmpItemAbbrMatchFuzzy ctermbg=111  ctermfg=0   guibg=#7fa7f8 guifg=#000000 cterm=bold gui=bold
 hi CmpItemMenu           ctermbg=15   ctermfg=0   guibg=#ffffff guifg=#000000
