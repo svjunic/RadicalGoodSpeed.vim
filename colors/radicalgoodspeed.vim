@@ -154,7 +154,7 @@ hi Identifier       ctermfg=221              guifg=#ffd700               gui=non
 hi PreProc          ctermfg=214              guifg=#fcaf3e
 hi Function         ctermfg=177              guifg=#bd7ae0
 hi Type             ctermfg=253              guifg=#e3e7df               gui=none cterm=none
-hi Underlined       ctermfg=81               guifg=#80a0ff
+hi Underlined       ctermfg=81               guifg=#00c0ff
 hi Keyword          ctermfg=254              guifg=#eeeeec
 hi Special          ctermfg=249              guifg=#888a85
 hi Error            ctermfg=244              guifg=#eeeeec guibg=#cc0000
