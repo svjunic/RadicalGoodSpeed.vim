@@ -115,7 +115,7 @@ hi DiffChange       ctermfg=255 ctermbg=17   guibg=#003C70
 hi DiffText         ctermfg=255 ctermbg=164  guibg=#b30487               gui=none cterm=none
 
 " Folds
-hi Folded           ctermfg=135 ctermbg=0    guibg=#ae5ff2 guifg=#000000
+hi Folded           ctermfg=135 ctermbg=0    guibg=#000000 guifg=#ae5ff2
 hi FoldColumn                   ctermbg=0    guibg=#000000 guifg=#3465a4
 
 " Specials
