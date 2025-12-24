@@ -280,9 +280,12 @@ hi CmpItemKindKeyword    ctermbg=209  ctermfg=0   guibg=#fd6944 guifg=#000000
 hi CmpItemKindClass      ctermbg=226  ctermfg=0   guibg=#ffff0b guifg=#000000
 
 " ------------------------------------------------------------
-" Treesitter & LSP Semantic Token links (Neovim 0.11+)
+" Neovim
 " ------------------------------------------------------------
 if has('nvim')
+  " -----
+  " Treesitter & LSP Semantic Token links (Neovim 0.11+)
+  " -----
   " --- Treesitter base links ---
   hi! link @function              Function
   hi! link @function.method       Function
@@ -343,4 +346,19 @@ if has('nvim')
   " Readonly variables/properties feel like constants in this theme
   hi! link @lsp.typemod.variable.readonly  Constant
   hi! link @lsp.typemod.property.readonly  Constant
+
+  " -----
+  " for refractalize/oil-git-status.nvim
+  " -----
+  hi OilGitStatusIndexModified          guibg=#000000 guifg=#00bbff
+  hi OilGitStatusWorkingTreeModified    guibg=#000000 guifg=#00bbcc
+  
+  hi OilGitStatusIndexAdded             guibg=#000000 guifg=#ffbb00
+  hi OilGitStatusWorkingTreeAdded       guibg=#000000 guifg=#ccbb00
+  
+  hi OilGitStatusIndexUntracked         guibg=#000000 guifg=#ffffff
+  hi OilGitStatusWorkingTreeUntracked   guibg=#000000 guifg=#eeeeee
+
+  hi OilGitStatusIndexUnmodified                      guifg=none
+  hi OilGitStatusWorkingTreeUnmodified                guifg=none
 endif
