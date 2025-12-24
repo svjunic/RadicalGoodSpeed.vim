@@ -1,6 +1,6 @@
 " Vim color file
 " Maintainer: sv.junic(sv.junic@gmail.com) URL: http://sv.junic.jp
-" Last Change: 25-Jun-2015.
+" Last Change: 2025/12/24
 " Version: 1.6
 " Changelog: 0.1 - add many color
 "            0.2 - change many color
@@ -361,4 +361,7 @@ if has('nvim')
 
   hi OilGitStatusIndexUnmodified                      guifg=none
   hi OilGitStatusWorkingTreeUnmodified                guifg=none
+
+  hi OilGitStatusIndexIgnored           guibg=none    guifg=#ffff00
+  hi OilGitStatusWorkingTreeIgnored     guibg=none    guifg=#ffff00
 endif
