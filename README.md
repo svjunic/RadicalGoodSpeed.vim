@@ -57,3 +57,27 @@ Next, add the following command to your `~/.vimrc`:
 colorscheme radicalgoodspeed
 ```
 
+## Internal structure (Vim / Neovim)
+
+This repository keeps `colors/radicalgoodspeed.vim` as the only entry point.
+
+- Vim: loads a minimal legacy implementation from `autoload/radicalgoodspeed/vim.vim`.
+- Neovim: delegates to Lua (`lua/radicalgoodspeed/init.lua`).
+
+Neovim-side code is organized to make future expansion easy:
+
+```
+lua/radicalgoodspeed/
+  palette.lua        -- color data only (no side effects)
+  groups.lua         -- core highlight groups
+  ts.lua             -- Tree-sitter (@...) links
+  lsp.lua            -- LSP / semantic tokens (@lsp...) links
+  integrations/
+    telescope.lua
+    cmp.lua
+    gitsigns.lua
+  init.lua            -- orchestrates everything
+```
+
+Integration modules are safe to load: they use `pcall(require, ...)` and do nothing when the plugin is not installed.
+
