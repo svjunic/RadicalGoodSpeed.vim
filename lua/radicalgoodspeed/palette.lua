@@ -11,6 +11,9 @@ local M = {
   fg4 = "#d3d7cf",
   fg5 = "#e3e7df",
 
+  white0 = "#ffffff",
+  white1 = "#cccccc",
+
   gray0 = "#121212",
   gray1 = "#2e3436",
   gray2 = "#333333",
@@ -20,6 +23,7 @@ local M = {
   cyan0 = "#00ccff",
 
   green0 = "#8ae234",
+  green1 = "#96FF00",
 
   yellow0 = "#ffd700",
   orange0 = "#fcaf3e",

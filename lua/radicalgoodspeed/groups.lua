@@ -83,6 +83,11 @@ function M.get(p)
 
     -- Spell
     SpellBad = { underline = true, sp = p.yellow0 },
+
+    -- Html
+    htmlTag = { fg = p.white1 },
+    htmlEndTag = { fg = p.white1 },
+    htmlTagName = { fg = p.white0 },
   }
 end
 
