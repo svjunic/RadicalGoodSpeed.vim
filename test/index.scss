@@ -1,0 +1,55 @@
+/* highlight.scss - Neovim highlight sample */
+$primary: #2ecc71;
+$padding: 1rem;
+
+@mixin rounded($radius: 6px) {
+  border-radius: $radius;
+}
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.card {
+  @include rounded(8px);
+  padding: $padding;
+  background: lighten($primary, 40%);
+  color: darken($primary, 40%);
+
+  &__header {
+    font-weight: 700;
+  }
+
+  &--featured {
+    border: 2px solid $primary;
+    @extend %visually-hidden; /* demonstration */
+  }
+
+  .meta {
+    display: flex;
+    gap: 0.5rem;
+    span {
+      color: rgba(0,0,0,0.6);
+    }
+  }
+
+  @media (min-width: 800px) {
+    padding: 1.5rem;
+  }
+}
+
+$icons: ('search': '\f002', 'user': '\f007');
+
+@function icon($name) {
+  @return map-get($icons, $name);
+}
+
+.icon {
+  &--#{$primary} {
+    content: icon('search');
+  }
+}

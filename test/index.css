@@ -1,0 +1,48 @@
+/* highlight.css - Neovim highlight sample */
+:root {
+  --main-color: #3498db;
+  --accent: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: var(--main-color);
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+a:hover, a:focus {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.btn {
+  background: var(--main-color);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+  animation: fade-in 0.6s ease both;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
