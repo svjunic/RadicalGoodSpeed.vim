@@ -55,7 +55,7 @@ function M.get(p)
 
     -- Syntax
     Comment = { fg = p.cyan0 },
-    String = { fg = p.green0 },
+    String = { fg = p.white0 },
     Constant = { fg = p.green0 },
     Number = { fg = p.green0 },
     Statement = { fg = p.pink0 },
