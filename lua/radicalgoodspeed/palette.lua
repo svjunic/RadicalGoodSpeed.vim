@@ -13,6 +13,7 @@ local M = {
 
   white0 = "#ffffff",
   white1 = "#cccccc",
+  white2 = "#aaaaaa",
 
   gray0 = "#121212",
   gray1 = "#2e3436",
@@ -27,6 +28,7 @@ local M = {
 
   yellow0 = "#ffd700",
   orange0 = "#fcaf3e",
+  orange1 = "#ff9900",
 
   magenta0 = "#9529F4",
   magenta1 = "#c27cfc",
@@ -34,7 +36,7 @@ local M = {
   pink1 = "#e7439c",
   pink2 = "#f0417b",
 
-  red0 = "#ef2929",
+  red0 = "#ff0033",
 }
 
 return M

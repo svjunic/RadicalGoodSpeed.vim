@@ -19,9 +19,9 @@ function M.get(p)
     ["@lsp.type.method"] = { link = "Function" },
     ["@lsp.type.constructor"] = { link = "Function" },
 
-    ["@lsp.type.variable"] = { link = "Identifier" },
-    ["@lsp.type.parameter"] = { link = "Identifier" },
-    ["@lsp.type.property"] = { link = "Identifier" },
+    -- ["@lsp.type.variable"] = { link = "Identifier" },
+    -- ["@lsp.type.parameter"] = { link = "Identifier" },
+    -- ["@lsp.type.property"] = { link = "Identifier" },
     ["@lsp.type.enumMember"] = { link = "Constant" },
     ["@lsp.type.event"] = { link = "Constant" },
 

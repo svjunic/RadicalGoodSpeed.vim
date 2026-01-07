@@ -61,7 +61,7 @@ function M.get(p)
     Statement = { fg = p.pink0 },
     Identifier = { fg = p.yellow0 },
     PreProc = { fg = p.orange0 },
-    Function = { fg = "#bd7ae0" },
+    Function = { fg = p.magenta1, bold = true },
     Type = { fg = p.fg5 },
     Underlined = { fg = "#00c0ff" },
     Keyword = { fg = p.fg2 },
@@ -76,6 +76,7 @@ function M.get(p)
     DiagnosticInfo = { fg = p.cyan0 },
     DiagnosticHint = { fg = p.orange0 },
     DiagnosticOk = { fg = p.green0 },
+    DiagnosticUnnecessary = { fg = p.red0 },
 
     -- Floating windows
     FloatBorder = { fg = "#af00ff" },
@@ -88,11 +89,27 @@ function M.get(p)
     htmlTag = { fg = p.white1 },
     htmlEndTag = { fg = p.white1 },
     htmlTagName = { fg = p.white0 },
+    htmlString = { fg = p.green0 },
 
     -- CSS
+    cssBraces = { fg = p.white2 },
     cssTagName = { fg = p.orange0 },
     cssClassName = { fg = p.magenta1 },
     cssClassNameDot = { fg = p.magenta1 },
+
+    -- JavaScript
+    javaScriptReserved = { fg = p.orange0 },
+    javaScriptBraces = { fg = p.white2 },
+
+    -- TypeScript
+    typescriptExport = { fg = p.orange0 }, 
+    typescriptFuncKeyword = { fg = p.orange0 },
+
+    -- Python
+    pyhtonStatement = { fg = p.orange0 },
+
+    -- astro
+    astroJavaScriptExpression = { fg = p.white0 },
   }
 end
 
