@@ -88,6 +88,11 @@ function M.get(p)
     htmlTag = { fg = p.white1 },
     htmlEndTag = { fg = p.white1 },
     htmlTagName = { fg = p.white0 },
+
+    -- CSS
+    cssTagName = { fg = p.orange0 },
+    cssClassName = { fg = p.magenta1 },
+    cssClassNameDot = { fg = p.magenta1 },
   }
 end
 

@@ -29,6 +29,7 @@ local M = {
   orange0 = "#fcaf3e",
 
   magenta0 = "#9529F4",
+  magenta1 = "#c27cfc",
   pink0 = "#ff88ee",
   pink1 = "#e7439c",
   pink2 = "#f0417b",
