@@ -64,6 +64,22 @@ This repository keeps `colors/radicalgoodspeed.vim` as the only entry point.
 - Vim: loads a minimal legacy implementation from `autoload/radicalgoodspeed/vim.vim`.
 - Neovim: delegates to Lua (`lua/radicalgoodspeed/init.lua`).
 
+### Options
+
+#### Force CTERM fallback (Neovim)
+
+If your terminal does not support true color, or you want to force the legacy (cterm) highlights even on Neovim, set:
+
+```vim
+let g:radicalgoodspeed_force_cterm = 1
+```
+
+Then apply the colorscheme as usual:
+
+```vim
+colorscheme radicalgoodspeed
+```
+
 Neovim-side code is organized to make future expansion easy:
 
 ```

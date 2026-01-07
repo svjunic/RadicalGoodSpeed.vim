@@ -76,8 +76,15 @@ let colors_name = "radicalgoodspeed"
 " Neovim / Vim branching
 " ------------------------------------------------------------
 if has('nvim')
-  lua require('radicalgoodspeed').load()
-  finish
+  " Force cterm fallback when requested.
+  if get(g:, 'radicalgoodspeed_force_cterm', 0)
+    if exists('+termguicolors')
+      set notermguicolors
+    endif
+  else
+    lua require('radicalgoodspeed').load()
+    finish
+  endif
 endif
 
 runtime! autoload/radicalgoodspeed/vim.vim
