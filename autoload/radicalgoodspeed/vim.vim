@@ -63,11 +63,11 @@ function! radicalgoodspeed#vim#load() abort
   " Current Line
   "set cursorline
   hi clear CursorLine
-  hi CursorLine                   ctermbg=none   guibg=#000000
+  hi CursorLine                   ctermbg=NONE   guibg=#000000
 
   " Default Colors
-  hi Normal           ctermfg=251 ctermbg=none guibg=none    guifg=#c6c6c6
-  hi NonText          ctermfg=233 ctermbg=none guibg=none    guifg=#121212 gui=none cterm=none
+  hi Normal           ctermfg=251 ctermbg=NONE guibg=NONE    guifg=#c6c6c6
+  hi NonText          ctermfg=233 ctermbg=NONE guibg=NONE    guifg=#121212 gui=NONE cterm=NONE
   hi Cursor           ctermfg=11  ctermbg=251  guibg=#c6c6c6
   hi ICursor          ctermfg=247 ctermbg=251  guibg=#c6c6c6
 
@@ -76,18 +76,18 @@ function! radicalgoodspeed#vim#load() abort
   hi IncSearch        ctermfg=214 ctermbg=239  guibg=#2e3436 guifg=#fcaf3e
 
   " Window Elements
-  hi StatusLine       ctermfg=239 ctermbg=251  guibg=#babdb6 guifg=#2e3436 gui=none cterm=none
-  hi StatusLineNC     ctermfg=239 ctermbg=249  guibg=#888a85 guifg=#2e3436 gui=none cterm=none
-  hi VertSplit        ctermfg=244 ctermbg=249  guibg=#888a85 guifg=#555753 gui=none cterm=none
+  hi StatusLine       ctermfg=239 ctermbg=251  guibg=#babdb6 guifg=#2e3436 gui=NONE cterm=NONE
+  hi StatusLineNC     ctermfg=239 ctermbg=249  guibg=#888a85 guifg=#2e3436 gui=NONE cterm=NONE
+  hi VertSplit        ctermfg=244 ctermbg=249  guibg=#888a85 guifg=#555753 gui=NONE cterm=NONE
   hi Visual                       ctermbg=129  guibg=#9529F4
   hi MoreMsg          ctermfg=75                             guifg=#729fcf
-  hi Question         ctermfg=154                            guifg=#8ae234 gui=none cterm=none
+  hi Question         ctermfg=154                            guifg=#8ae234 gui=NONE cterm=NONE
   hi WildMenu         ctermfg=254 ctermbg=233  guibg=#121212 guifg=#e4e4e4
   hi LineNr           ctermfg=239 ctermbg=0    guibg=#000000 guifg=#4e4e4e
   hi SignColumn       ctermfg=221 ctermbg=0    guibg=#000000
 
   " Snippet
-  hi SnippetTabstop   ctermbg=none
+  hi SnippetTabstop   ctermbg=NONE
 
   " Pmenu
   hi Pmenu            ctermfg=234 ctermbg=15   guibg=#161616 guifg=#ffffff
@@ -99,7 +99,7 @@ function! radicalgoodspeed#vim#load() abort
   hi DiffDelete       ctermfg=125 ctermbg=233  guibg=#0e1416 guifg=#4D3800
   hi DiffAdd          ctermfg=255 ctermbg=238  guibg=#1f2b2d
   hi DiffChange       ctermfg=255 ctermbg=17   guibg=#003C70
-  hi DiffText         ctermfg=255 ctermbg=164  guibg=#b30487               gui=none cterm=none
+  hi DiffText         ctermfg=255 ctermbg=164  guibg=#b30487               gui=NONE cterm=NONE
 
   " Folds
   hi Folded           ctermfg=135 ctermbg=0    guibg=#ae5ff2 guifg=#000000
@@ -118,7 +118,7 @@ function! radicalgoodspeed#vim#load() abort
   hi DiagnosticOk     ctermfg=154                            guibg=#8ae234
 
   " Tabs
-  hi TabLine          ctermfg=251 ctermbg=59   guibg=#5f5f5f guifg=#c6c6c6 gui=none cterm=none
+  hi TabLine          ctermfg=251 ctermbg=59   guibg=#5f5f5f guifg=#c6c6c6 gui=NONE cterm=NONE
   hi TabLineFill      ctermfg=59  ctermbg=237  guibg=#3a3a3a guifg=#5f5f5f gui=underline cterm=underline
   hi TabLineSel       ctermfg=255 ctermbg=164  guibg=#d70087 guifg=#eeeeee gui=bold cterm=bold
 
@@ -132,16 +132,16 @@ function! radicalgoodspeed#vim#load() abort
   hi Comment          ctermfg=45               guifg=#00ccff
   hi Constant         ctermfg=154              guifg=#8ae234
   hi Number           ctermfg=154              guifg=#8ae234
-  hi Statement        ctermfg=213              guifg=#ff88ee               gui=none cterm=none
-  hi Identifier       ctermfg=221              guifg=#ffd700               gui=none cterm=none
+  hi Statement        ctermfg=213              guifg=#ff88ee               gui=NONE cterm=NONE
+  hi Identifier       ctermfg=221              guifg=#ffd700               gui=NONE cterm=NONE
   hi PreProc          ctermfg=214              guifg=#fcaf3e
   hi Function         ctermfg=177              guifg=#bd7ae0
-  hi Type             ctermfg=253              guifg=#e3e7df               gui=none cterm=none
+  hi Type             ctermfg=253              guifg=#e3e7df               gui=NONE cterm=NONE
   hi Underlined       ctermfg=81               guifg=#00c0ff
   hi Keyword          ctermfg=254              guifg=#eeeeec
   hi Special          ctermfg=249              guifg=#a3a3a3
   hi Error            ctermfg=244              guifg=#eeeeec guibg=#cc0000
-  hi Operator         ctermfg=216              guifg=#f8a077               gui=none cterm=none
+  hi Operator         ctermfg=216              guifg=#f8a077               gui=NONE cterm=NONE
   hi Delimiter        ctermfg=252              guifg=#d3d7cf
 
   " PHP
@@ -155,7 +155,7 @@ function! radicalgoodspeed#vim#load() abort
   hi phpMemberSelector              ctermfg=249             guifg=#a3a3a3
   hi phpUnknownSelector             ctermfg=249             guifg=#a3a3a3
   hi phpVarSelector                 ctermfg=251             guifg=#babdb6
-  hi phpSemicolon                   ctermfg=249             guifg=#a3a3a3 gui=none cterm=none
+  hi phpSemicolon                   ctermfg=249             guifg=#a3a3a3 gui=NONE cterm=NONE
   hi phpFunctions                   ctermfg=252             guifg=#d3d7cf
   hi phpParent                      ctermfg=249             guifg=#a3a3a3
 
@@ -172,7 +172,7 @@ function! radicalgoodspeed#vim#load() abort
   hi javascriptFuncName             ctermfg=198             guifg=#f0417b
 
   " Sass
-  hi sassClass        ctermfg=213              guifg=#ff88ee               gui=none cterm=none
+  hi sassClass        ctermfg=213              guifg=#ff88ee               gui=NONE cterm=NONE
 
   " HTML
   hi htmlTag                        ctermfg=249             guifg=#a3a3a3
@@ -180,7 +180,7 @@ function! radicalgoodspeed#vim#load() abort
   hi htmlTagName                    ctermfg=255             guifg=#ffffff
   hi htmlSpecialTagName             ctermfg=251             guifg=#babdb6
   hi htmlArg                        ctermfg=252             guifg=#d3d7cf
-  hi htmlTitle                      ctermfg=154             guifg=#8ae234 gui=none cterm=none
+  hi htmlTitle                      ctermfg=154             guifg=#8ae234 gui=NONE cterm=NONE
   hi link htmlH1 htmlTitle
   hi link htmlH2 htmlH1
   hi link htmlH3 htmlH1
