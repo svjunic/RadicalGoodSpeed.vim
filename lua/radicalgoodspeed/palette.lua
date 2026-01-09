@@ -14,6 +14,8 @@ local M = {
   white0 = "#ffffff",
   white1 = "#cccccc",
   white2 = "#aaaaaa",
+  
+  black0 = "#000000",
 
   gray0 = "#121212",
   gray1 = "#2e3436",

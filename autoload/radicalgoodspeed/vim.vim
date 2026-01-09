@@ -102,7 +102,7 @@ function! radicalgoodspeed#vim#load() abort
   hi DiffText         ctermfg=255 ctermbg=164  guibg=#b30487               gui=NONE cterm=NONE
 
   " Folds
-  hi Folded           ctermfg=135 ctermbg=0    guibg=#ae5ff2 guifg=#000000
+  hi Folded           ctermfg=135 ctermbg=NONE guibg=NONE    guifg=#ae5ff2
   hi FoldColumn                   ctermbg=0    guibg=#000000 guifg=#3465a4
 
   " Specials

@@ -5,8 +5,8 @@ function M.get(p)
     -- Core
     Normal = { fg = p.fg0, bg = "NONE" },
     NonText = { fg = p.gray0, bg = "NONE" },
-    CursorLine = { bg = p.bg0 },
     Cursor = { fg = p.gray1, bg = p.fg0 },
+    CursorLine = { bg = p.bg0 },
 
     -- UI
     StatusLine = { fg = p.gray1, bg = p.fg4 },
@@ -33,7 +33,7 @@ function M.get(p)
     DiffText = { bg = "#b30487" },
 
     -- Folds
-    Folded = { fg = "#000000", bg = "#ae5ff2" },
+    Folded = { fg = p.magenta1 , bold = true },
     FoldColumn = { fg = "#3465a4", bg = p.bg0 },
 
     -- Tabs
