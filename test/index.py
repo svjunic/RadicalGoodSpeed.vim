@@ -19,8 +19,6 @@ FLAG = True
 NONE_VAL = None
 ELLIP = ...
 
-# TODO: ハイライトで TODO コメントを確認
-
 @dataclass
 class Example:
     """クラスのドキュメンテーション文字列"""
