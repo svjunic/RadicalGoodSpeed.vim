@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neovim Highlight Sample</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --primary: #0b69ff;
+      --accent: rgb(236, 72, 153);
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 2rem;
+      color: #111827;
+      background: linear-gradient(180deg, #fff 0%, #f7fafc 100%);
+    }
+    header > h1::after {
+      content: " — ハイライト確認";
+      color: var(--accent);
+    }
+    nav ul li a:hover { text-decoration: underline; }
+    .btn {
+      display: inline-block;
+      padding: .5rem 1rem;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+    /* pseudo, attribute selector, media query */
+    input[type="checkbox"]:checked + label { font-weight: 700; }
+    @media (max-width: 600px) {
+      body { margin: 1rem; }
+    }
+    /* nested selectors and pseudo-elements */
+    .card {
+      border: 1px solid #e5e7eb;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .card h2::first-letter { font-size: 1.5em; color: var(--primary); }
+  </style>
+</head>
+<body>
+  <!-- コメント: Neovim のシンタックスハイライト確認用サンプル -->
+  <header>
+    <h1>Sample HTML</h1>
+    <p class="muted">タグ、属性、文字参照、スクリプト、スタイルなどを含む。</p>
+    <nav aria-label="main">
+      <ul>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#script">Script</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card" id="forms">
+      <h2>Forms &amp; Inputs</h2>
+      <form action="/submit" method="post" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder='例: "山田 太郎"' autocomplete="name" required />
+
+        <fieldset>
+          <legend>Options</legend>
+          <input id="opt1" type="checkbox" name="opt" value="a" checked />
+          <label for="opt1">Option A</label>
+
+          <input id="opt2" type="radio" name="mode" value="b" />
+          <label for="opt2">Mode B</label>
+        </fieldset>
+
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" placeholder="短い自己紹介"></textarea>
+
+        <label for="color">Color</label>
+        <input id="color" type="color" value="#ff0000" />
+
+        <button type="submit" class="btn">送信</button>
+      </form>
+    </section>
+
+    <section class="card" id="media">
+      <h2>Media &amp; SVG</h2>
+      <picture>
+        <source media="(min-width:800px)" srcset="image-large.jpg" />
+        <img src="image.jpg" alt="サンプル画像" width="320" height="180" loading="lazy" />
+      </picture>
+
+      <svg width="120" height="60" viewBox="0 0 120 60" role="img" aria-label="簡易図">
+        <rect x="5" y="5" width="110" height="50" fill="#f3f4f6" stroke="#111827" stroke-width="1"/>
+        <circle cx="60" cy="30" r="10" fill="var(--accent)" />
+        <!-- SVG コメント -->
+      </svg>
+
+      <table>
+        <thead>
+          <tr><th>項目</th><th>値</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>数値</td><td>42</td></tr>
+          <tr><td>エスケープ</td><td>&lt;script&gt; &amp; &nbsp; &#9731;</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="script">
+      <h2>JavaScript</h2>
+      <pre><code><!-- embedded JS sample -->
+const PI = 3.14159;
+let count = 0;
+
+function incr(n = 1) {
+  return n + count;
+}
+
+const arrow = (x) => {
+  // template literal with HTML-looking content
+  return `<div class="item" data-id="${x}">Item #${x}</div>`;
+};
+
+// regex and special chars
+const rx = /(\w+)\s*=\s*"([^"]*)"/g;
+
+document.addEventListener('click', (e) => {
+  // 簡易イベント
+  // eslint-disable-next-line no-console
+  console.log('clicked', e.target);
+});
+</code></pre>
+
+      <template id="tpl">
+        <article><h3><slot name="title">デフォルトタイトル</slot></h3></article>
+      </template>
+    </section>
+
+    <aside>
+      <h3>補足</h3>
+      <ol>
+        <li>HTML 要素</li>
+        <li>属性と値</li>
+        <li>コメントと文字参照</li>
+      </ol>
+      <ul>
+        <li>void 要素: &lt;br&gt;, &lt;img&gt;, &lt;input&gt;</li>
+        <li>boolean 属性: required, checked, disabled</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Generated for Neovim highlighting tests.</p>
+  </footer>
+
+  <script type="module">
+    // ES module sample: import (commented out for offline)
+    // import { helper } from './utils.js';
+
+    const el = document.querySelector('.card h2');
+    if (el) el.dataset.sample = "true";
+
+    // Immediately-invoked function expression
+    (function demo(i){
+      // コメント: IIFE 内
+      return i * 2;
+    })(10);
+  </script>
+</body>
+</html>
+
