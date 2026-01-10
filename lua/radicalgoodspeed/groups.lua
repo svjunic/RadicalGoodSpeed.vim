@@ -22,9 +22,9 @@ function M.get(p)
 
     -- Popup menu
     Pmenu = { fg = p.fg1, bg = p.bg1 },
-    PmenuSel = { fg = p.orange0, bg = p.bg1 },
-    PmenuSbar = { bg = p.gray2 },
-    PmenuThumb = { fg = p.fg1, bg = p.fg1 },
+    PmenuSel = { bg = p.gray1 },
+    PmenuSbar = { fg = p.white0, bg = p.black1 },
+    PmenuThumb = { bg = p.white0 },
 
     -- Diff
     DiffDelete = { fg = "#4D3800", bg = "#0e1416" },
@@ -79,8 +79,8 @@ function M.get(p)
     DiagnosticUnnecessary = { fg = p.red0 },
 
     -- Floating windows
-    FloatBorder = { fg = "#af00ff" },
-    NormalFloat = { fg = p.fg1, bg = p.bg0 },
+    FloatBorder = { fg = p.white0 },
+    NormalFloat = { fg = p.white0,  bg = p.black1 },
 
     -- Spell
     SpellBad = { underline = true, sp = p.yellow0 },
