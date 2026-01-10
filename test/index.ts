@@ -1,13 +1,4 @@
-/**
- * Highlight sample for Neovim (TypeScript)
- * - Various syntax elements: types, interfaces, enums, classes, functions, async/await,
- *   template literals, regex, comments, optional chaining, nullish coalescing, generics, etc.
- * URL: https://example.com
- */
-
-/* Block comment example
-   Multiline text to test comment highlighting.
-*/
+/* highlight.ts - Neovim highlight sample */
 
 export enum Color {
   Red = 1,
@@ -54,7 +45,10 @@ export const add = (a: number, b = 2): number => a + b;
 
 export async function fetchMock(url: string): Promise<string> {
   // simulate network fetch
-  const res = await Promise.resolve({ ok: true, text: async () => `fetched from ${url}` });
+  const res = await Promise.resolve({
+    ok: true,
+    text: async () => `fetched from ${url}`,
+  });
   if (!res.ok) throw new Error("Network error");
   return await res.text();
 }
@@ -117,4 +111,3 @@ export default function main(): void {
   // eslint-disable-next-line no-console
   console.log(message, id, c.value, Color.Green);
 }
-
